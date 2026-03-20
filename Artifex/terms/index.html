@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T&eacute;rminos y Condiciones &mdash; Artifex</title>
+    <meta name="description" content="T&eacute;rminos y Condiciones de Uso de Artifex, marketplace artesano. Versi&oacute;n 1.1, vigente desde el 20 de marzo de 2026. Conforme a la LSSI-CE y LGDCU.">
+    <meta name="author" content="David Alonso Santos">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="T&eacute;rminos y Condiciones &mdash; Artifex">
+    <meta property="og:description" content="T&eacute;rminos y Condiciones de Uso de Artifex, marketplace artesano. Versi&oacute;n 1.1. Conforme a la LSSI-CE y LGDCU.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dalodev.github.io/legal-docs/Artifex/terms/">
+    <meta property="og:locale" content="es_ES">
+    <link rel="canonical" href="https://dalodev.github.io/legal-docs/Artifex/terms/">
+    <link rel="alternate" hreflang="en" href="https://dalodev.github.io/legal-docs/Artifex/terms/en/">
+    <link rel="alternate" hreflang="es" href="https://dalodev.github.io/legal-docs/Artifex/terms/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #FAFAFA;
+            --color-surface: #FFFFFF;
+            --color-text: #1A1A2E;
+            --color-text-secondary: #4A4A68;
+            --color-accent: #6C63FF;
+            --color-accent-dark: #5A52D5;
+            --color-border: #E2E2EF;
+            --color-highlight: #F0EEFF;
+            --color-tag-bg: #EDE9FE;
+            --color-tag-text: #5B21B6;
+            --color-warning-bg: #FEF3C7;
+            --color-warning-border: #F59E0B;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-heading: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+            --max-width: 820px;
+            --radius: 8px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 24px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Header */
+        .site-header {
+            background: var(--color-surface);
+            border-bottom: 1px solid var(--color-border);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+            background: rgba(255,255,255,0.95);
+        }
+
+        .header-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .brand {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.875rem;
+        }
+
+        .header-nav a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .header-nav a:hover {
+            color: var(--color-accent);
+        }
+
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 12px;
+            border: 1px solid var(--color-border);
+            border-radius: 999px;
+            font-size: 0.8rem;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: all 0.15s;
+        }
+
+        .lang-switch:hover {
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+            background: var(--color-highlight);
+        }
+
+        /* Main content */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        .doc-header {
+            margin-bottom: 40px;
+        }
+
+        .doc-header h1 {
+            font-family: var(--font-heading);
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--color-text);
+            line-height: 1.2;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .doc-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+        }
+
+        .doc-meta .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            background: var(--color-tag-bg);
+            color: var(--color-tag-text);
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .doc-meta .separator {
+            color: var(--color-border);
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius);
+            padding: 24px 28px;
+            margin-bottom: 40px;
+        }
+
+        .toc-title {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--color-text);
+        }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+            padding: 0;
+        }
+
+        .toc ol li {
+            counter-increment: toc-counter;
+            margin-bottom: 6px;
+        }
+
+        .toc ol li::before {
+            content: counter(toc-counter) ".";
+            display: inline-block;
+            width: 28px;
+            color: var(--color-accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .toc ol li a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.925rem;
+            transition: color 0.15s;
+        }
+
+        .toc ol li a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 36px;
+        }
+
+        h2 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-highlight);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        strong {
+            color: var(--color-text);
+            font-weight: 600;
+        }
+
+        ul, ol {
+            margin-bottom: 14px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            color: var(--color-text-secondary);
+        }
+
+        a {
+            color: var(--color-accent);
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        a:hover {
+            color: var(--color-accent-dark);
+        }
+
+        /* Tables */
+        .table-wrapper {
+            overflow-x: auto;
+            margin-bottom: 16px;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        thead {
+            background: var(--color-highlight);
+        }
+
+        th {
+            text-align: left;
+            padding: 12px 16px;
+            font-weight: 600;
+            color: var(--color-text);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        td {
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-text-secondary);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Callout box */
+        .callout {
+            background: var(--color-highlight);
+            border-left: 4px solid var(--color-accent);
+            border-radius: 0 var(--radius) var(--radius) 0;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+        }
+
+        .callout p {
+            margin-bottom: 0;
+            color: var(--color-text);
+            font-size: 0.925rem;
+        }
+
+        .callout-warning {
+            background: var(--color-warning-bg);
+            border-left-color: var(--color-warning-border);
+        }
+
+        .new-badge {
+            display: inline-block;
+            padding: 1px 8px;
+            background: var(--color-accent);
+            color: #fff;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            vertical-align: middle;
+            margin-left: 6px;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+            padding: 32px 24px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+        }
+
+        .footer-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .footer-inner p {
+            margin-bottom: 6px;
+            color: var(--color-text-secondary);
+        }
+
+        .footer-inner a {
+            color: var(--color-accent);
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .doc-header h1 {
+                font-size: 1.65rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .container {
+                padding: 24px 16px 60px;
+            }
+
+            .toc {
+                padding: 18px 20px;
+            }
+
+            th, td {
+                padding: 8px 12px;
+                font-size: 0.825rem;
+            }
+        }
+
+        /* Print */
+        @media print {
+            .site-header, .lang-switch {
+                position: static;
+            }
+
+            body {
+                font-size: 12pt;
+                background: white;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/legal-docs/Artifex/" class="brand">Artifex</a>
+        <nav class="header-nav">
+            <a href="/legal-docs/Artifex/">Inicio</a>
+            <a href="/legal-docs/Artifex/terms/en/" class="lang-switch">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                English
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- Content -->
+<main class="container">
+
+    <!-- Document Header -->
+    <div class="doc-header">
+        <h1>T&eacute;rminos y Condiciones de Uso</h1>
+        <div class="doc-meta">
+            <span class="tag">v1.1</span>
+            <span class="separator">|</span>
+            <span>Fecha de entrada en vigor: <strong>20 de marzo de 2026</strong></span>
+            <span class="separator">|</span>
+            <span>&Uacute;ltima actualizaci&oacute;n: <strong>20 de marzo de 2026</strong></span>
+        </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="&Iacute;ndice">
+        <div class="toc-title">&Iacute;ndice</div>
+        <ol>
+            <li><a href="#identificacion">Identificaci&oacute;n del Prestador</a></li>
+            <li><a href="#objeto">Objeto</a></li>
+            <li><a href="#definiciones">Definiciones</a></li>
+            <li><a href="#registro">Registro y Cuentas</a></li>
+            <li><a href="#planes">Planes de Vendedor</a></li>
+            <li><a href="#funcionamiento">Funcionamiento de la Plataforma</a></li>
+            <li><a href="#proceso-pedido">Proceso de Pedido</a></li>
+            <li><a href="#exclusion-pagos">Exclusi&oacute;n de Responsabilidad en Pagos</a></li>
+            <li><a href="#responsabilidades-vendedor">Responsabilidades del Artesano/Vendedor</a></li>
+            <li><a href="#responsabilidades-comprador">Responsabilidades del Comprador/Cliente</a></li>
+            <li><a href="#desistimiento">Productos Personalizados y Derecho de Desistimiento</a></li>
+            <li><a href="#propiedad-intelectual">Propiedad Intelectual e Industrial</a></li>
+            <li><a href="#conducta-prohibida">Conducta Prohibida</a></li>
+            <li><a href="#suspension">Suspensi&oacute;n, Baja y Eliminaci&oacute;n de Cuenta</a></li>
+            <li><a href="#limitacion-responsabilidad">Limitaci&oacute;n de Responsabilidad</a></li>
+            <li><a href="#notificaciones-push">Notificaciones Push</a></li>
+            <li><a href="#modificaciones">Modificaciones de los T&eacute;rminos</a></li>
+            <li><a href="#legislacion">Legislaci&oacute;n Aplicable y Jurisdicci&oacute;n</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ol>
+    </nav>
+
+    <!-- &sect;1 -->
+    <section id="identificacion">
+        <h2>1. Identificaci&oacute;n del Prestador</h2>
+        <p>En cumplimiento del art&iacute;culo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Informaci&oacute;n y de Comercio Electr&oacute;nico (LSSI-CE), se informa al usuario de los siguientes datos del prestador del servicio:</p>
+        <div class="table-wrapper">
+            <table>
+                <tbody>
+                    <tr><td><strong>Titular</strong></td><td>David Alonso Santos, profesional aut&oacute;nomo</td></tr>
+                    <tr><td><strong>DNI</strong></td><td>53473641K</td></tr>
+                    <tr><td><strong>Domicilio</strong></td><td>Calle de Alcorc&oacute;n, 28, Portal 2, 4.&ordm; A, 28981, Parla, Madrid</td></tr>
+                    <tr><td><strong>Email</strong></td><td><a href="mailto:dalodev.dev@gmail.com">dalodev.dev@gmail.com</a></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- &sect;2 -->
+    <section id="objeto">
+        <h2>2. Objeto</h2>
+        <p>Artifex (en adelante, la <strong>&laquo;Plataforma&raquo;</strong>) es una aplicaci&oacute;n m&oacute;vil de intermediaci&oacute;n que pone en contacto a artesanos y vendedores con compradores interesados en productos artesanales y personalizados.</p>
+        <p>La Plataforma <strong>no es parte</strong> en las transacciones comerciales que se realicen entre vendedores y compradores. Artifex <strong>no procesa pagos</strong>, no interviene en la fijaci&oacute;n de precios, no gestiona env&iacute;os ni almacena productos. Su funci&oacute;n es exclusivamente la de facilitar la comunicaci&oacute;n y el descubrimiento de productos entre las partes.</p>
+        <p>El uso de la Plataforma implica la aceptaci&oacute;n &iacute;ntegra y sin reservas de los presentes T&eacute;rminos y Condiciones de Uso. Si no est&aacute; de acuerdo con alguno de ellos, le rogamos que no utilice la Plataforma.</p>
+    </section>
+
+    <!-- &sect;3 -->
+    <section id="definiciones">
+        <h2>3. Definiciones</h2>
+        <ul>
+            <li><strong>Plataforma:</strong> La aplicaci&oacute;n m&oacute;vil Artifex, disponible para dispositivos Android e iOS, incluyendo todos sus contenidos, funcionalidades y servicios.</li>
+            <li><strong>Artesano / Vendedor:</strong> Usuario registrado que publica productos artesanales o personalizados para su venta a trav&eacute;s de la Plataforma.</li>
+            <li><strong>Comprador / Cliente:</strong> Usuario registrado que navega, consulta y realiza pedidos de productos ofrecidos por los vendedores.</li>
+            <li><strong>Pedido:</strong> Solicitud formal de compra realizada por un comprador a un vendedor a trav&eacute;s de la Plataforma.</li>
+            <li><strong>Producto Personalizado:</strong> Art&iacute;culo elaborado o modificado conforme a las especificaciones particulares del comprador.</li>
+            <li><strong>Encantamiento:</strong> Funcionalidad de la Plataforma que permite a los vendedores destacar o promocionar sus productos dentro del cat&aacute;logo.</li>
+        </ul>
+    </section>
+
+    <!-- &sect;4 -->
+    <section id="registro">
+        <h2>4. Registro y Cuentas</h2>
+        <p>Para acceder a las funcionalidades completas de la Plataforma, el usuario debe registrarse creando una cuenta personal.</p>
+        <ul>
+            <li>El registro est&aacute; reservado a personas mayores de <strong>18 a&ntilde;os</strong> o, en su caso, con capacidad legal para contratar.</li>
+            <li>Existen dos tipos de cuenta: <strong>CLIENTE</strong> (comprador) y <strong>VENDEDOR</strong> (artesano/vendedor). Un mismo usuario puede solicitar ambos roles.</li>
+            <li>El usuario se compromete a proporcionar informaci&oacute;n veraz, completa y actualizada en el momento del registro y a mantenerla debidamente actualizada.</li>
+            <li>Cada usuario es responsable de la confidencialidad de sus credenciales de acceso y de todas las actividades que se realicen bajo su cuenta.</li>
+            <li>En caso de sospecha de uso no autorizado de la cuenta, el usuario deber&aacute; notificarlo de forma inmediata al prestador a trav&eacute;s de <a href="mailto:dalodev.dev@gmail.com">dalodev.dev@gmail.com</a>.</li>
+        </ul>
+    </section>
+
+    <!-- &sect;5 -->
+    <section id="planes">
+        <h2>5. Planes de Vendedor</h2>
+        <p>La Plataforma ofrece los siguientes planes para usuarios con rol de vendedor:</p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Precio</th>
+                        <th>Productos</th>
+                        <th>Caracter&iacute;sticas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>FREE</strong></td>
+                        <td>Gratuito</td>
+                        <td>Hasta 3 productos</td>
+                        <td>Plan b&aacute;sico gratuito. Acceso a las funcionalidades est&aacute;ndar de la Plataforma.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PRO</strong></td>
+                        <td>4,99 &euro;/mes</td>
+                        <td>Ilimitados</td>
+                        <td>Publicaci&oacute;n ilimitada de productos, funcionalidades avanzadas y acceso prioritario a nuevas caracter&iacute;sticas.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="callout">
+            <p>Las suscripciones PRO se gestionan a trav&eacute;s de Google Play Store (Android) o Apple App Store (iOS). Las pol&iacute;ticas de reembolso, renovaci&oacute;n y cancelaci&oacute;n de las tiendas de aplicaciones son aplicables a las suscripciones contratadas a trav&eacute;s de dichas plataformas.</p>
+        </div>
+        <p>El prestador se reserva el derecho de modificar los planes, sus precios y condiciones. Cualquier cambio ser&aacute; notificado a los usuarios con la antelaci&oacute;n prevista en el apartado 17 de estos T&eacute;rminos.</p>
+    </section>
+
+    <!-- &sect;6 -->
+    <section id="funcionamiento">
+        <h2>6. Funcionamiento de la Plataforma</h2>
+        <p>La Plataforma permite a los vendedores:</p>
+        <ul>
+            <li>Publicar productos artesanales o personalizados con descripci&oacute;n, im&aacute;genes, precio y condiciones de venta.</li>
+            <li>Gestionar su cat&aacute;logo de productos y recibir solicitudes de pedido de los compradores.</li>
+            <li>Comunicarse con los compradores a trav&eacute;s de los mecanismos internos de la Plataforma.</li>
+        </ul>
+        <p>La Plataforma permite a los compradores:</p>
+        <ul>
+            <li>Explorar el cat&aacute;logo de productos y vendedores registrados.</li>
+            <li>Enviar solicitudes de pedido a los vendedores.</li>
+            <li>Contactar con los vendedores para consultar detalles sobre los productos.</li>
+        </ul>
+        <p>La Plataforma <strong>no garantiza</strong> la disponibilidad de ning&uacute;n producto, ni la aceptaci&oacute;n de ning&uacute;n pedido por parte del vendedor.</p>
+    </section>
+
+    <!-- &sect;7 -->
+    <section id="proceso-pedido">
+        <h2>7. Proceso de Pedido</h2>
+        <p>El proceso de pedido en Artifex sigue las siguientes fases:</p>
+        <ol>
+            <li><strong>Creaci&oacute;n:</strong> El comprador env&iacute;a una solicitud de pedido al vendedor, indicando el producto deseado y, en su caso, las especificaciones de personalizaci&oacute;n.</li>
+            <li><strong>Aceptaci&oacute;n o rechazo:</strong> El vendedor revisa la solicitud y decide aceptarla o rechazarla. El vendedor no est&aacute; obligado a aceptar ning&uacute;n pedido.</li>
+            <li><strong>Estados del pedido:</strong> Los pedidos transitan por diferentes estados (pendiente, aceptado, en elaboraci&oacute;n, enviado, completado, cancelado) que se reflejan en la Plataforma para informaci&oacute;n de ambas partes.</li>
+            <li><strong>Pago:</strong> El pago se realiza <strong>fuera de la Plataforma</strong>, directamente entre comprador y vendedor, por los medios que ambas partes acuerden.</li>
+        </ol>
+        <div class="callout callout-warning">
+            <p><strong>Importante:</strong> Artifex no interviene en el proceso de pago. Las condiciones de pago, plazos y m&eacute;todos son responsabilidad exclusiva de las partes implicadas en la transacci&oacute;n.</p>
+        </div>
+    </section>
+
+    <!-- &sect;8 -->
+    <section id="exclusion-pagos">
+        <h2>8. Exclusi&oacute;n de Responsabilidad en Pagos</h2>
+        <p>Artifex <strong>no procesa, no gestiona y no intermedia</strong> en ning&uacute;n pago entre compradores y vendedores. La Plataforma no recoge datos bancarios ni de tarjetas de cr&eacute;dito de los usuarios en relaci&oacute;n con las transacciones entre partes.</p>
+        <p>En consecuencia, el prestador <strong>queda eximido de toda responsabilidad</strong> derivada de:</p>
+        <ul>
+            <li>Impagos, retrasos en los pagos o pagos parciales entre las partes.</li>
+            <li>Fraudes, estafas o irregularidades en los m&eacute;todos de pago utilizados por las partes.</li>
+            <li>Disputas econ&oacute;micas entre comprador y vendedor derivadas de la transacci&oacute;n.</li>
+            <li>Cualquier obligaci&oacute;n tributaria o fiscal derivada de las transacciones realizadas entre las partes.</li>
+        </ul>
+    </section>
+
+    <!-- &sect;9 -->
+    <section id="responsabilidades-vendedor">
+        <h2>9. Responsabilidades del Artesano/Vendedor</h2>
+        <p>El vendedor se compromete a:</p>
+        <ul>
+            <li>Publicar informaci&oacute;n veraz, precisa y no enga&ntilde;osa sobre sus productos, incluyendo descripciones, im&aacute;genes y precios.</li>
+            <li>Cumplir con toda la normativa aplicable, incluyendo la legislaci&oacute;n de consumo, fiscal, sanitaria y de seguridad de los productos que comercialice.</li>
+            <li>Gestionar de buena fe los pedidos recibidos, respondiendo en un plazo razonable y manteniendo informado al comprador sobre el estado del pedido.</li>
+            <li>Garantizar que los productos ofrecidos no infringen derechos de propiedad intelectual o industrial de terceros.</li>
+            <li>Cumplir con las obligaciones tributarias y fiscales derivadas de su actividad comercial, incluyendo la emisi&oacute;n de facturas cuando proceda conforme a la normativa vigente.</li>
+            <li>Respetar los derechos de los consumidores conforme al Real Decreto Legislativo 1/2007 (LGDCU) y normativa complementaria.</li>
+        </ul>
+    </section>
+
+    <!-- &sect;10 -->
+    <section id="responsabilidades-comprador">
+        <h2>10. Responsabilidades del Comprador/Cliente</h2>
+        <p>El comprador se compromete a:</p>
+        <ul>
+            <li>Proporcionar informaci&oacute;n veraz al realizar solicitudes de pedido, incluyendo las especificaciones de personalizaci&oacute;n.</li>
+            <li>Actuar de buena fe en las negociaciones y transacciones con los vendedores.</li>
+            <li>Cumplir con los acuerdos de pago alcanzados con el vendedor.</li>
+            <li>No realizar solicitudes de pedido fraudulentas, especulativas o sin intenci&oacute;n real de compra.</li>
+            <li>Comunicarse de forma respetuosa y profesional con los vendedores.</li>
+        </ul>
+    </section>
+
+    <!-- &sect;11 -->
+    <section id="desistimiento">
+        <h2>11. Productos Personalizados y Derecho de Desistimiento</h2>
+        <p>Conforme al art&iacute;culo 103, apartado c), del Real Decreto Legislativo 1/2007 (LGDCU), el <strong>derecho de desistimiento no ser&aacute; aplicable</strong> a los contratos que se refieran al suministro de bienes confeccionados conforme a las especificaciones del consumidor o claramente personalizados.</p>
+        <p>Dado que una parte sustancial de los productos ofrecidos a trav&eacute;s de Artifex son productos artesanales y personalizados, los compradores deben tener en cuenta que:</p>
+        <ul>
+            <li>Los productos elaborados bajo encargo o personalizados <strong>no admiten derecho de desistimiento</strong> conforme a la legislaci&oacute;n vigente.</li>
+            <li>Antes de confirmar un pedido de producto personalizado, el comprador deber&aacute; asegurarse de que las especificaciones proporcionadas son correctas y completas.</li>
+            <li>En caso de productos que no sean personalizados, se aplicar&aacute; el r&eacute;gimen general de desistimiento previsto en la LGDCU, si bien la relaci&oacute;n contractual es exclusivamente entre comprador y vendedor, sin intervenci&oacute;n de la Plataforma.</li>
+        </ul>
+    </section>
+
+    <!-- &sect;12 -->
+    <section id="propiedad-intelectual">
+        <h2>12. Propiedad Intelectual e Industrial</h2>
+        <p>Todos los contenidos de la Plataforma (dise&ntilde;o, c&oacute;digo, logotipos, marcas, textos, gr&aacute;ficos e interfaz) son propiedad del prestador o se utilizan bajo licencia, y est&aacute;n protegidos por la legislaci&oacute;n espa&ntilde;ola e internacional de propiedad intelectual e industrial.</p>
+        <p>Los vendedores conservan la propiedad intelectual de los contenidos que publiquen (fotograf&iacute;as, descripciones, dise&ntilde;os de productos). Al publicarlos en la Plataforma, otorgan al prestador una <strong>licencia no exclusiva, gratuita y revocable</strong> para mostrar, reproducir y distribuir dichos contenidos dentro del &aacute;mbito de funcionamiento de la Plataforma y su promoci&oacute;n.</p>
+        <p>Queda prohibida la reproducci&oacute;n, distribuci&oacute;n, comunicaci&oacute;n p&uacute;blica o transformaci&oacute;n de cualquier contenido de la Plataforma sin la autorizaci&oacute;n expresa del titular de los derechos.</p>
+    </section>
+
+    <!-- &sect;13 -->
+    <section id="conducta-prohibida">
+        <h2>13. Conducta Prohibida</h2>
+        <p>Queda expresamente prohibido el uso de la Plataforma para:</p>
+        <ul>
+            <li>Publicar contenido ilegal, ofensivo, difamatorio, discriminatorio o que vulnere los derechos fundamentales de terceros.</li>
+            <li>Vender productos ilegales, falsificados, robados o que infrinjan derechos de propiedad intelectual o industrial.</li>
+            <li>Realizar spam, env&iacute;os masivos no solicitados o actividades de marketing no autorizadas.</li>
+            <li>Manipular el sistema de valoraciones, rese&ntilde;as o cualquier mecanismo de reputaci&oacute;n de la Plataforma.</li>
+            <li>Intentar acceder de forma no autorizada a sistemas, servidores o datos de la Plataforma o de otros usuarios.</li>
+            <li>Utilizar la Plataforma para fines distintos a los previstos en estos T&eacute;rminos.</li>
+            <li>Suplantar la identidad de otro usuario o entidad.</li>
+            <li>Realizar ingenier&iacute;a inversa, descompilar o intentar obtener el c&oacute;digo fuente de la Plataforma.</li>
+        </ul>
+    </section>
+
+    <!-- &sect;14 -->
+    <section id="suspension">
+        <h2>14. Suspensi&oacute;n, Baja y Eliminaci&oacute;n de Cuenta</h2>
+        <p>El prestador se reserva el derecho de <strong>suspender o cancelar</strong> la cuenta de cualquier usuario que incumpla estos T&eacute;rminos, sin perjuicio de las acciones legales que pudieran corresponder.</p>
+        <p>El usuario puede solicitar la baja y eliminaci&oacute;n de su cuenta en cualquier momento a trav&eacute;s de los mecanismos habilitados en la Plataforma o contactando al prestador en <a href="mailto:dalodev.dev@gmail.com">dalodev.dev@gmail.com</a>.</p>
+        <p>La eliminaci&oacute;n de la cuenta conlleva:</p>
+        <ul>
+            <li>La supresi&oacute;n de los datos personales del usuario conforme a la pol&iacute;tica de privacidad y la normativa vigente de protecci&oacute;n de datos.</li>
+            <li>La desactivaci&oacute;n de los productos publicados por el vendedor, si procede.</li>
+            <li>La imposibilidad de recuperar los datos, contenidos o historial asociados a la cuenta eliminada.</li>
+        </ul>
+        <p>Los pedidos en curso en el momento de la baja deber&aacute;n ser completados o cancelados de mutuo acuerdo entre las partes afectadas.</p>
+    </section>
+
+    <!-- &sect;15 -->
+    <section id="limitacion-responsabilidad">
+        <h2>15. Limitaci&oacute;n de Responsabilidad</h2>
+        <p>De conformidad con los art&iacute;culos 13 a 17 de la LSSI-CE, el prestador <strong>no ser&aacute; responsable</strong> de:</p>
+        <ul>
+            <li>Los contenidos publicados por los usuarios, incluyendo descripciones de productos, im&aacute;genes y valoraciones.</li>
+            <li>La calidad, seguridad, legalidad o idoneidad de los productos ofrecidos por los vendedores.</li>
+            <li>El cumplimiento o incumplimiento de las obligaciones contractuales entre compradores y vendedores.</li>
+            <li>Los da&ntilde;os o perjuicios derivados de las transacciones realizadas entre las partes fuera de la Plataforma.</li>
+            <li>Las interrupciones temporales del servicio por mantenimiento, actualizaciones o causas de fuerza mayor.</li>
+            <li>Los da&ntilde;os derivados del uso inadecuado de la Plataforma por parte de los usuarios.</li>
+        </ul>
+        <p>El prestador se compromete a retirar con la mayor diligencia posible aquellos contenidos que resulten il&iacute;citos o contrarios a estos T&eacute;rminos, tan pronto tenga conocimiento efectivo de ello, de conformidad con el art&iacute;culo 16 de la LSSI-CE.</p>
+    </section>
+
+    <!-- &sect;16 -->
+    <section id="notificaciones-push">
+        <h2>16. Notificaciones Push <span class="new-badge">Nuevo en v1.1</span></h2>
+        <p>La Plataforma puede enviar notificaciones push al dispositivo del usuario para comunicar informaci&oacute;n relevante, incluyendo, entre otros:</p>
+        <ul>
+            <li>Actualizaciones sobre el estado de los pedidos (aceptaci&oacute;n, env&iacute;o, entrega, etc.).</li>
+            <li>Novedades y nuevas funcionalidades de la Plataforma.</li>
+            <li>Ofertas promocionales y recomendaciones de productos.</li>
+            <li>Avisos de seguridad o cambios en los T&eacute;rminos y Condiciones.</li>
+        </ul>
+        <p>El permiso para recibir notificaciones push se solicita al usuario en el primer inicio de la aplicaci&oacute;n o cuando una funcionalidad relevante lo requiera. El usuario puede:</p>
+        <ul>
+            <li><strong>Desactivar las notificaciones</strong> en cualquier momento desde los ajustes del dispositivo o desde la configuraci&oacute;n interna de la aplicaci&oacute;n.</li>
+            <li><strong>Gestionar las preferencias</strong> de tipos de notificaci&oacute;n que desea recibir, cuando dicha funcionalidad est&eacute; disponible.</li>
+        </ul>
+        <p>Las notificaciones push <strong>no son requisito indispensable</strong> para el uso de la Plataforma. La desactivaci&oacute;n de las notificaciones no afectar&aacute; al acceso ni al funcionamiento de las funcionalidades principales de Artifex.</p>
+    </section>
+
+    <!-- &sect;17 -->
+    <section id="modificaciones">
+        <h2>17. Modificaciones de los T&eacute;rminos</h2>
+        <p>El prestador se reserva el derecho de modificar los presentes T&eacute;rminos y Condiciones en cualquier momento. Las modificaciones ser&aacute;n notificadas a los usuarios a trav&eacute;s de la Plataforma o por correo electr&oacute;nico con un preaviso m&iacute;nimo de <strong>30 d&iacute;as naturales</strong> antes de su entrada en vigor.</p>
+        <p>Cuando las modificaciones afecten de manera sustancial a los derechos u obligaciones de los usuarios, se requerir&aacute; la <strong>aceptaci&oacute;n expresa</strong> de los nuevos T&eacute;rminos para continuar utilizando la Plataforma.</p>
+        <p>El uso continuado de la Plataforma tras la entrada en vigor de las modificaciones implica la aceptaci&oacute;n de los T&eacute;rminos actualizados.</p>
+    </section>
+
+    <!-- &sect;18 -->
+    <section id="legislacion">
+        <h2>18. Legislaci&oacute;n Aplicable y Jurisdicci&oacute;n</h2>
+        <p>Los presentes T&eacute;rminos y Condiciones se rigen por la <strong>legislaci&oacute;n espa&ntilde;ola</strong>.</p>
+        <p>Para la resoluci&oacute;n de cualquier controversia derivada de la interpretaci&oacute;n o aplicaci&oacute;n de estos T&eacute;rminos, las partes se someten a la jurisdicci&oacute;n de los <strong>Juzgados y Tribunales de Parla (Madrid)</strong>, salvo que la normativa de protecci&oacute;n de consumidores establezca un fuero distinto conforme al art&iacute;culo 90.2 del Real Decreto Legislativo 1/2007 (LGDCU).</p>
+        <p>Se informa al usuario de que la Comisi&oacute;n Europea pone a disposici&oacute;n una plataforma de resoluci&oacute;n de litigios en l&iacute;nea, accesible en <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.</p>
+    </section>
+
+    <!-- &sect;19 -->
+    <section id="contacto">
+        <h2>19. Contacto</h2>
+        <p>Para cualquier consulta, reclamaci&oacute;n o solicitud relacionada con estos T&eacute;rminos y Condiciones, el usuario puede contactar con el prestador a trav&eacute;s de:</p>
+        <ul>
+            <li><strong>Correo electr&oacute;nico</strong>: <a href="mailto:dalodev.dev@gmail.com">dalodev.dev@gmail.com</a></li>
+            <li><strong>Direcci&oacute;n postal</strong>: David Alonso Santos &mdash; Calle de Alcorc&oacute;n, 28, Portal 2, 4.&ordm; A, 28981, Parla, Madrid</li>
+        </ul>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p><strong>Artifex</strong> &mdash; Marketplace artesano</p>
+        <p>T&eacute;rminos y Condiciones v1.1 &mdash; Vigente desde el 20 de marzo de 2026</p>
+        <p>Contacto: <a href="mailto:dalodev.dev@gmail.com">dalodev.dev@gmail.com</a></p>
+        <p style="margin-top: 12px; font-size: 0.8rem;">&copy; 2026 David Alonso Santos. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
