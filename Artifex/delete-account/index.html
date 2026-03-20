@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar cuenta &mdash; Artifex</title>
+    <meta name="description" content="C&oacute;mo eliminar tu cuenta de Artifex y qu&eacute; datos se eliminan o conservan.">
+    <meta name="author" content="David Alonso Santos">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Eliminar cuenta &mdash; Artifex">
+    <meta property="og:description" content="Instrucciones para eliminar tu cuenta de Artifex.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dalodev.github.io/legal-docs/Artifex/delete-account/">
+    <link rel="canonical" href="https://dalodev.github.io/legal-docs/Artifex/delete-account/">
+    <link rel="alternate" hreflang="en" href="https://dalodev.github.io/legal-docs/Artifex/delete-account/en/">
+    <link rel="alternate" hreflang="es" href="https://dalodev.github.io/legal-docs/Artifex/delete-account/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #FAFAFA;
+            --color-surface: #FFFFFF;
+            --color-text: #1A1A2E;
+            --color-text-secondary: #4A4A68;
+            --color-accent: #6C63FF;
+            --color-accent-dark: #5A52D5;
+            --color-border: #E2E2EF;
+            --color-highlight: #F0EEFF;
+            --color-tag-bg: #EDE9FE;
+            --color-tag-text: #5B21B6;
+            --color-warning-bg: #FEF3C7;
+            --color-warning-border: #F59E0B;
+            --color-danger-bg: #FEE2E2;
+            --color-danger-border: #EF4444;
+            --color-success-bg: #ECFDF5;
+            --color-success-border: #10B981;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-heading: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+            --max-width: 820px;
+            --radius: 8px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 24px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .site-header {
+            background: rgba(255,255,255,0.95);
+            border-bottom: 1px solid var(--color-border);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+        }
+
+        .header-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .brand {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.875rem;
+        }
+
+        .header-nav a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .header-nav a:hover {
+            color: var(--color-accent);
+        }
+
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 12px;
+            border: 1px solid var(--color-border);
+            border-radius: 999px;
+            font-size: 0.8rem;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: all 0.15s;
+        }
+
+        .lang-switch:hover {
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+            background: var(--color-highlight);
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        .doc-header {
+            margin-bottom: 40px;
+        }
+
+        .doc-header h1 {
+            font-family: var(--font-heading);
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--color-text);
+            line-height: 1.2;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .doc-header p {
+            color: var(--color-text-secondary);
+            font-size: 1.05rem;
+        }
+
+        h2 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: 16px;
+            margin-top: 36px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-highlight);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        strong {
+            color: var(--color-text);
+            font-weight: 600;
+        }
+
+        ul, ol {
+            margin-bottom: 14px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--color-text-secondary);
+        }
+
+        a {
+            color: var(--color-accent);
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        a:hover {
+            color: var(--color-accent-dark);
+        }
+
+        .steps {
+            list-style: none;
+            padding: 0;
+            counter-reset: step-counter;
+        }
+
+        .steps li {
+            counter-increment: step-counter;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius);
+            padding: 18px 20px 18px 60px;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 18px;
+            top: 18px;
+            width: 30px;
+            height: 30px;
+            background: var(--color-accent);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .callout {
+            background: var(--color-highlight);
+            border-left: 4px solid var(--color-accent);
+            border-radius: 0 var(--radius) var(--radius) 0;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+        }
+
+        .callout p {
+            margin-bottom: 0;
+            color: var(--color-text);
+            font-size: 0.925rem;
+        }
+
+        .callout-warning {
+            background: var(--color-warning-bg);
+            border-left-color: var(--color-warning-border);
+        }
+
+        .callout-danger {
+            background: var(--color-danger-bg);
+            border-left-color: var(--color-danger-border);
+        }
+
+        .callout-success {
+            background: var(--color-success-bg);
+            border-left-color: var(--color-success-border);
+        }
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .data-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius);
+            padding: 20px;
+        }
+
+        .data-card h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .data-card ul {
+            margin-bottom: 0;
+        }
+
+        .data-card.deleted {
+            border-color: var(--color-success-border);
+        }
+
+        .data-card.deleted h3 {
+            color: #059669;
+        }
+
+        .data-card.retained {
+            border-color: var(--color-warning-border);
+        }
+
+        .data-card.retained h3 {
+            color: #D97706;
+        }
+
+        .site-footer {
+            background: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+            padding: 32px 24px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+        }
+
+        .footer-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .footer-inner p {
+            margin-bottom: 6px;
+            color: var(--color-text-secondary);
+        }
+
+        .footer-inner a {
+            color: var(--color-accent);
+        }
+
+        @media (max-width: 640px) {
+            .doc-header h1 {
+                font-size: 1.65rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .container {
+                padding: 24px 16px 60px;
+            }
+
+            .data-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            .site-header, .lang-switch {
+                position: static;
+            }
+
+            body {
+                font-size: 12pt;
+                background: white;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/legal-docs/Artifex/" class="brand">Artifex</a>
+        <nav class="header-nav">
+            <a href="/legal-docs/Artifex/">Inicio</a>
+            <a href="/legal-docs/Artifex/delete-account/en/" class="lang-switch">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                English
+            </a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="doc-header">
+        <h1>Eliminar tu cuenta de Artifex</h1>
+        <p>Puedes eliminar tu cuenta y todos tus datos personales directamente desde la aplicaci&oacute;n. A continuaci&oacute;n te explicamos c&oacute;mo hacerlo y qu&eacute; sucede con tus datos.</p>
+    </div>
+
+    <div class="callout-warning callout">
+        <p><strong>Atenci&oacute;n:</strong> La eliminaci&oacute;n de la cuenta es permanente e irreversible. No podr&aacute;s recuperar tu cuenta ni tus datos una vez confirmada la eliminaci&oacute;n.</p>
+    </div>
+
+    <h2>C&oacute;mo eliminar tu cuenta</h2>
+
+    <ol class="steps">
+        <li><strong>Abre la aplicaci&oacute;n Artifex</strong> e inicia sesi&oacute;n con tu cuenta.</li>
+        <li>Ve a tu <strong>Perfil</strong> pulsando el icono de perfil en la barra de navegaci&oacute;n inferior.</li>
+        <li>Despl&aacute;zate hasta la parte inferior de la pantalla de perfil.</li>
+        <li>Pulsa el bot&oacute;n rojo <strong>&laquo;Eliminar cuenta&raquo;</strong>.</li>
+        <li>Aparecer&aacute; un <strong>di&aacute;logo de confirmaci&oacute;n</strong> advirti&eacute;ndote de que la acci&oacute;n es irreversible.</li>
+        <li>Pulsa <strong>&laquo;Eliminar&raquo;</strong> para confirmar. Tu cuenta ser&aacute; eliminada inmediatamente y se cerrar&aacute; la sesi&oacute;n.</li>
+    </ol>
+
+    <div class="callout">
+        <p>Si tienes <strong>pedidos activos</strong> (en curso, enviados o pendientes de entrega), deber&aacute;s completarlos o cancelarlos antes de poder eliminar tu cuenta.</p>
+    </div>
+
+    <h2>Datos que se eliminan</h2>
+
+    <div class="data-grid">
+        <div class="data-card deleted">
+            <h3>Eliminados inmediatamente</h3>
+            <ul>
+                <li>Nombre y nombre de usuario</li>
+                <li>Direcci&oacute;n de correo electr&oacute;nico</li>
+                <li>Contrase&ntilde;a</li>
+                <li>Foto de perfil</li>
+                <li>Datos de contacto (email, WhatsApp)</li>
+                <li>Biograf&iacute;a y ubicaci&oacute;n del taller</li>
+                <li>Nombre del taller y especialidades</li>
+                <li>Tokens de notificaciones push</li>
+                <li>Tokens de sesi&oacute;n (JWT)</li>
+                <li>Saldo de monedas</li>
+                <li>Puntuaci&oacute;n de reputaci&oacute;n</li>
+            </ul>
+        </div>
+        <div class="data-card retained">
+            <h3>Conservados por obligaci&oacute;n legal</h3>
+            <ul>
+                <li><strong>Historial de pedidos:</strong> 5 a&ntilde;os desde la finalizaci&oacute;n del pedido (obligaci&oacute;n fiscal y mercantil, Art. 30 del C&oacute;digo de Comercio).</li>
+                <li><strong>Registros de consentimiento:</strong> 5 a&ntilde;os (principio de responsabilidad proactiva del RGPD).</li>
+                <li><strong>Datos de suscripci&oacute;n:</strong> Gestionados por RevenueCat y Google Play / Apple App Store seg&uacute;n sus pol&iacute;ticas de retenci&oacute;n.</li>
+            </ul>
+            <p style="margin-top: 12px; margin-bottom: 0; font-size: 0.85rem; color: var(--color-text-secondary);">Estos datos se conservan de forma anonimizada (sin asociaci&oacute;n a tu identidad) y se eliminan autom&aacute;ticamente una vez transcurridos los plazos legales.</p>
+        </div>
+    </div>
+
+    <h2>Si los vendedores tienen productos publicados</h2>
+    <p>Si tu cuenta es de tipo <strong>Vendedor</strong>, al eliminar la cuenta todos tus productos publicados ser&aacute;n <strong>desactivados autom&aacute;ticamente</strong> y dejar&aacute;n de ser visibles en la Plataforma.</p>
+
+    <h2>Solicitud por correo electr&oacute;nico</h2>
+    <p>Si no puedes acceder a tu cuenta o prefieres solicitar la eliminaci&oacute;n por otro medio, puedes enviar un correo electr&oacute;nico a:</p>
+    <p style="text-align: center; font-size: 1.1rem;"><strong><a href="mailto:dalodev.dev@gmail.com">dalodev.dev@gmail.com</a></strong></p>
+    <p>Incluye en tu solicitud:</p>
+    <ul>
+        <li>El correo electr&oacute;nico asociado a tu cuenta de Artifex.</li>
+        <li>Una copia de tu documento de identidad (DNI, NIE o pasaporte) para verificar tu identidad.</li>
+    </ul>
+    <p>Procesaremos tu solicitud en un plazo m&aacute;ximo de <strong>30 d&iacute;as</strong> conforme al art&iacute;culo 12.3 del RGPD.</p>
+
+    <h2>M&aacute;s informaci&oacute;n</h2>
+    <p>Para conocer en detalle c&oacute;mo tratamos tus datos personales, consulta nuestra <a href="/legal-docs/Artifex/privacy-policy/">Pol&iacute;tica de Privacidad</a>.</p>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p><strong>Artifex</strong> &mdash; Marketplace artesano</p>
+        <p>Contacto: <a href="mailto:dalodev.dev@gmail.com">dalodev.dev@gmail.com</a></p>
+        <p style="margin-top: 12px; font-size: 0.8rem;">&copy; 2026 David Alonso Santos. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
