@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy &mdash; Artifex</title>
-    <meta name="description" content="Privacy Policy for the Artifex app &mdash; artisan marketplace. Version 1.1, effective March 20, 2026. Compliant with GDPR, LOPDGDD and LSSI-CE.">
+    <meta name="description" content="Privacy Policy for the Artifex app &mdash; artisan marketplace. Version 1.2, effective March 25, 2026. Compliant with GDPR, LOPDGDD and LSSI-CE.">
     <meta name="author" content="David Alonso Santos">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Privacy Policy &mdash; Artifex">
-    <meta property="og:description" content="Privacy Policy for the Artifex app &mdash; artisan marketplace. Version 1.1. Compliant with GDPR, LOPDGDD and LSSI-CE.">
+    <meta property="og:description" content="Privacy Policy for the Artifex app &mdash; artisan marketplace. Version 1.2. Compliant with GDPR, LOPDGDD and LSSI-CE.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dalodev.github.io/legal-docs/Artifex/privacy-policy/en/">
     <meta property="og:locale" content="en_US">
@@ -432,11 +432,11 @@
     <div class="doc-header">
         <h1>Privacy Policy</h1>
         <div class="doc-meta">
-            <span class="tag">v1.1</span>
+            <span class="tag">v1.2</span>
             <span class="separator">|</span>
-            <span>Effective date: <strong>March 20, 2026</strong></span>
+            <span>Effective date: <strong>March 25, 2026</strong></span>
             <span class="separator">|</span>
-            <span>Last updated: <strong>March 20, 2026</strong></span>
+            <span>Last updated: <strong>March 25, 2026</strong></span>
         </div>
     </div>
 
@@ -449,6 +449,7 @@
             <li><a href="#purposes">Purposes of Processing</a></li>
             <li><a href="#legal-basis">Legal Basis (GDPR)</a></li>
             <li><a href="#retention">Data Retention</a></li>
+            <li><a href="#analytics-monitoring">Analytics &amp; Error Monitoring</a></li>
             <li><a href="#recipients">Data Recipients &amp; Processors</a></li>
             <li><a href="#transfers">International Data Transfers</a></li>
             <li><a href="#push-notifications">Push Notifications</a></li>
@@ -679,6 +680,49 @@
         <p>Once retention periods have elapsed, data will be deleted or irreversibly anonymized.</p>
     </section>
 
+    <!-- 5bis. Analytics & Error Monitoring -->
+    <section id="analytics-monitoring">
+        <h2>5bis. Analytics &amp; Error Monitoring <span class="new-badge">NEW IN V1.2</span></h2>
+        <p>To improve the stability, performance, and user experience of the Platform, Artifex uses Google Firebase Analytics and Google Firebase Crashlytics services.</p>
+
+        <h3>Data Collected by Firebase Analytics</h3>
+        <p>Firebase Analytics collects the following data automatically and through events defined by the Platform:</p>
+        <ul>
+            <li>Device information: model, operating system, app version, and screen resolution.</li>
+            <li>Usage data: session duration, screens visited, actions performed within the application (such as viewing a product, adding to cart, placing an order, or publishing a product).</li>
+            <li>Approximate geographic location, derived from the IP address (country/region level, never precise geolocation).</li>
+            <li>User properties: account type (buyer, seller, or both) and subscription status (free or PRO).</li>
+        </ul>
+
+        <h3>Data Collected by Firebase Crashlytics</h3>
+        <p>When an error or unexpected application crash occurs, Firebase Crashlytics collects:</p>
+        <ul>
+            <li>Technical error information: stack trace, device state at the time of the crash, operating system version, and app version.</li>
+            <li>Internal user identifier (if logged in), in order to correlate errors with specific accounts and provide technical support.</li>
+        </ul>
+
+        <h3>Purpose of Processing</h3>
+        <p>This data is used exclusively to:</p>
+        <ul>
+            <li>Detect and fix technical errors affecting application stability.</li>
+            <li>Analyze usage patterns to improve user experience.</li>
+            <li>Monitor the overall performance of the Platform.</li>
+        </ul>
+        <p>Artifex does <strong>NOT</strong> use this data for advertising purposes, commercial profiling, or automated decision-making.</p>
+
+        <h3>Legal Basis</h3>
+        <p>Art. 6.1.f) GDPR (Legitimate interest): Ensuring the stability, security, and proper functioning of the Platform constitutes a legitimate interest of the controller that does not override the fundamental rights and freedoms of users, especially considering that the data is anonymized after the retention period.</p>
+
+        <h3>Retention Period</h3>
+        <p>Data collected by Firebase Analytics and Firebase Crashlytics is retained for a maximum period of <strong>90 days</strong> on Google Firebase servers, after which it is automatically anonymized or deleted.</p>
+
+        <h3>Data Processor</h3>
+        <p>Google LLC acts as a data processor in relation to Firebase services, pursuant to the Google Cloud data processing agreement. Data is stored in the European region (GCP europe-west1).</p>
+
+        <h3>Right to Object</h3>
+        <p>If you wish to object to the collection of analytics and error data, you may do so by sending an email to <a href="mailto:dalodev.dev@gmail.com">dalodev.dev@gmail.com</a> indicating your username and the subject &ldquo;Analytics opt-out&rdquo;. Artifex will disable analytics data collection on your account within a maximum of 15 business days. Please note that disabling Crashlytics may limit our ability to diagnose errors affecting your experience.</p>
+    </section>
+
     <!-- 6. Data Recipients & Processors -->
     <section id="recipients">
         <h2>6. Data Recipients &amp; Processors</h2>
@@ -688,21 +732,24 @@
         <p>Server hosting infrastructure. Data processor under Art. 28 GDPR. Data hosted exclusively in the EU region. Google Cloud Standard Contractual Clauses (SCCs) apply.</p>
 
         <h3>6.2. Firebase / Google LLC</h3>
-        <p>Push notification service via Firebase Cloud Messaging. In the future: Firebase Analytics and Firebase Crashlytics. Data is stored in the European Economic Area (EEA). Google Data Processing Terms apply.</p>
+        <p>Push notification service via Firebase Cloud Messaging. Data is stored in the European Economic Area (EEA). Google Data Processing Terms apply.</p>
 
-        <h3>6.3. RevenueCat, Inc. <span class="new-badge">NEW IN V1.1</span></h3>
+        <h3>6.3. Google Firebase (Analytics &amp; Crashlytics) <span class="new-badge">NEW IN V1.2</span></h3>
+        <p>Usage analytics and error monitoring services. Google LLC acts as a data processor pursuant to Article 28 of the GDPR. Data is processed on servers located in the European region (GCP europe-west1) and is automatically anonymized after 90 days.</p>
+
+        <h3>6.4. RevenueCat, Inc. <span class="new-badge">NEW IN V1.1</span></h3>
         <p>Subscription management. Processes subscription status, purchase identifiers, and platform information. Privacy Policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">https://www.revenuecat.com/privacy</a>. Covered by the EU-US Data Privacy Framework (adequacy decision) and Standard Contractual Clauses (SCCs) as a fallback mechanism.</p>
 
-        <h3>6.4. SMTP Email Provider</h3>
+        <h3>6.5. SMTP Email Provider</h3>
         <p>Sending transactional emails (order notifications, account communications). Only the email address and message content are shared.</p>
 
-        <h3>6.5. Data Shared Between Users</h3>
+        <h3>6.6. Data Shared Between Users</h3>
         <ul>
             <li>The buyer&rsquo;s <strong>shipping address</strong> and <strong>notes</strong> are shared with the seller for order fulfillment.</li>
             <li>The seller&rsquo;s <strong>public profile</strong> is visible to all users of the Platform.</li>
         </ul>
 
-        <h3>6.6. Public Authorities</h3>
+        <h3>6.7. Public Authorities</h3>
         <p>Data may be disclosed to judicial, tax, or administrative authorities when required by applicable law.</p>
 
         <div class="callout">
@@ -741,6 +788,7 @@
                 </tbody>
             </table>
         </div>
+        <p>Google Firebase stores and processes analytics and error data in the European region (GCP europe-west1). Although Google LLC is headquartered in the United States, the processing of this data takes place within the EEA pursuant to the European Commission&rsquo;s Standard Contractual Clauses.</p>
     </section>
 
     <!-- 8. Push Notifications -->
@@ -905,7 +953,7 @@
 <footer class="site-footer">
     <div class="footer-inner">
         <p><strong>Artifex</strong> &mdash; Artisan Marketplace</p>
-        <p>Privacy Policy v1.1 &mdash; Effective March 20, 2026</p>
+        <p>Privacy Policy v1.2 &mdash; Effective March 25, 2026</p>
         <p>Contact: <a href="mailto:dalodev.dev@gmail.com">dalodev.dev@gmail.com</a></p>
         <p style="margin-top: 12px; font-size: 0.8rem;">&copy; 2026 David Alonso Santos. All rights reserved.</p>
     </div>
