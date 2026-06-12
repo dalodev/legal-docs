@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T&eacute;rminos y Condiciones &mdash; Nellie</title>
+    <meta name="description" content="T&eacute;rminos y Condiciones de Uso de Nellie, tu sem&aacute;foro visual de tareas espor&aacute;dicas. Versi&oacute;n 1.0, vigente desde el 13 de junio de 2026.">
+    <meta name="author" content="David Alonso Santos">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="T&eacute;rminos y Condiciones &mdash; Nellie">
+    <meta property="og:description" content="T&eacute;rminos y Condiciones de Uso de Nellie. Versi&oacute;n 1.0.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dalodev.github.io/legal-docs/nellie/terms/">
+    <meta property="og:locale" content="es_ES">
+    <link rel="canonical" href="https://dalodev.github.io/legal-docs/nellie/terms/">
+    <link rel="alternate" hreflang="en" href="https://dalodev.github.io/legal-docs/nellie/terms/en/">
+    <link rel="alternate" hreflang="es" href="https://dalodev.github.io/legal-docs/nellie/terms/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #F5F0EB;
+            --color-surface: #FFFFFF;
+            --color-text: #2A241D;
+            --color-text-secondary: #5C554B;
+            --color-accent: #4CAF50;
+            --color-accent-dark: #388E3C;
+            --color-border: #E3DCD2;
+            --color-highlight: #E8F3E9;
+            --color-tag-bg: #DCEFDD;
+            --color-tag-text: #2E7D32;
+            --color-warning-bg: #FEF3C7;
+            --color-warning-border: #F59E0B;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-heading: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+            --max-width: 820px;
+            --radius: 8px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 24px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .site-header {
+            border-bottom: 1px solid var(--color-border);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+            background: rgba(255,255,255,0.95);
+        }
+
+        .header-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .brand {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--color-accent-dark);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.875rem;
+        }
+
+        .header-nav a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .header-nav a:hover {
+            color: var(--color-accent-dark);
+        }
+
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 12px;
+            border: 1px solid var(--color-border);
+            border-radius: 999px;
+            font-size: 0.8rem;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: all 0.15s;
+        }
+
+        .lang-switch:hover {
+            border-color: var(--color-accent);
+            color: var(--color-accent-dark);
+            background: var(--color-highlight);
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        .doc-header {
+            margin-bottom: 40px;
+        }
+
+        .doc-header h1 {
+            font-family: var(--font-heading);
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--color-text);
+            line-height: 1.2;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .doc-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+        }
+
+        .doc-meta .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            background: var(--color-tag-bg);
+            color: var(--color-tag-text);
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .doc-meta .separator {
+            color: var(--color-border);
+        }
+
+        .toc {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius);
+            padding: 24px 28px;
+            margin-bottom: 40px;
+        }
+
+        .toc-title {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--color-text);
+        }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+            padding: 0;
+        }
+
+        .toc ol li {
+            counter-increment: toc-counter;
+            margin-bottom: 6px;
+        }
+
+        .toc ol li::before {
+            content: counter(toc-counter) ".";
+            display: inline-block;
+            width: 28px;
+            color: var(--color-accent-dark);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .toc ol li a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.925rem;
+            transition: color 0.15s;
+        }
+
+        .toc ol li a:hover {
+            color: var(--color-accent-dark);
+        }
+
+        section {
+            margin-bottom: 36px;
+        }
+
+        h2 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-highlight);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        strong {
+            color: var(--color-text);
+            font-weight: 600;
+        }
+
+        ul, ol {
+            margin-bottom: 14px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            color: var(--color-text-secondary);
+        }
+
+        a {
+            color: var(--color-accent-dark);
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        a:hover {
+            color: var(--color-accent);
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin-bottom: 16px;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius);
+            background: var(--color-surface);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        thead {
+            background: var(--color-highlight);
+        }
+
+        th {
+            text-align: left;
+            padding: 12px 16px;
+            font-weight: 600;
+            color: var(--color-text);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        td {
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-text-secondary);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .callout {
+            background: var(--color-highlight);
+            border-left: 4px solid var(--color-accent);
+            border-radius: 0 var(--radius) var(--radius) 0;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+        }
+
+        .callout p {
+            margin-bottom: 0;
+            color: var(--color-text);
+            font-size: 0.925rem;
+        }
+
+        .callout-warning {
+            background: var(--color-warning-bg);
+            border-left-color: var(--color-warning-border);
+        }
+
+        .site-footer {
+            background: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+            padding: 32px 24px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+        }
+
+        .footer-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .footer-inner p {
+            margin-bottom: 6px;
+            color: var(--color-text-secondary);
+        }
+
+        .footer-inner a {
+            color: var(--color-accent-dark);
+        }
+
+        @media (max-width: 640px) {
+            .doc-header h1 {
+                font-size: 1.65rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .container {
+                padding: 24px 16px 60px;
+            }
+
+            .toc {
+                padding: 18px 20px;
+            }
+
+            th, td {
+                padding: 8px 12px;
+                font-size: 0.825rem;
+            }
+        }
+
+        @media print {
+            .site-header, .lang-switch {
+                position: static;
+            }
+
+            body {
+                font-size: 12pt;
+                background: white;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/legal-docs/nellie/" class="brand">Nellie</a>
+        <nav class="header-nav">
+            <a href="/legal-docs/nellie/">Inicio</a>
+            <a href="/legal-docs/nellie/terms/en/" class="lang-switch">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                English
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- Content -->
+<main class="container">
+
+    <!-- Document Header -->
+    <div class="doc-header">
+        <h1>T&eacute;rminos y Condiciones de Uso</h1>
+        <div class="doc-meta">
+            <span class="tag">v1.0</span>
+            <span class="separator">|</span>
+            <span>Fecha de entrada en vigor: <strong>13 de junio de 2026</strong></span>
+            <span class="separator">|</span>
+            <span>&Uacute;ltima actualizaci&oacute;n: <strong>13 de junio de 2026</strong></span>
+        </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="&Iacute;ndice">
+        <div class="toc-title">&Iacute;ndice</div>
+        <ol>
+            <li><a href="#objeto">Objeto</a></li>
+            <li><a href="#definiciones">Definiciones</a></li>
+            <li><a href="#licencia">Uso de la Aplicaci&oacute;n y Licencia</a></li>
+            <li><a href="#cuentas">Cuentas y Funci&oacute;n de Grupos</a></li>
+            <li><a href="#suscripciones">Suscripciones</a></li>
+            <li><a href="#conducta-prohibida">Conducta Prohibida</a></li>
+            <li><a href="#propiedad-intelectual">Propiedad Intelectual</a></li>
+            <li><a href="#eliminacion">Baja y Eliminaci&oacute;n de Cuenta</a></li>
+            <li><a href="#notificaciones-push">Notificaciones Push</a></li>
+            <li><a href="#limitacion-responsabilidad">Limitaci&oacute;n de Responsabilidad</a></li>
+            <li><a href="#modificaciones">Modificaciones de las Condiciones</a></li>
+            <li><a href="#legislacion">Legislaci&oacute;n Aplicable y Jurisdicci&oacute;n</a></li>
+            <li><a href="#contacto">Contacto e Identificaci&oacute;n del Prestador</a></li>
+        </ol>
+    </nav>
+
+    <!-- 1. Objeto -->
+    <section id="objeto">
+        <h2>1. Objeto</h2>
+        <p>Los presentes T&eacute;rminos y Condiciones (en adelante, las &laquo;Condiciones&raquo;) regulan el acceso y uso de la aplicaci&oacute;n m&oacute;vil <strong>Nellie</strong> (en adelante, la &laquo;Aplicaci&oacute;n&raquo;), disponible en Google Play Store y Apple App Store.</p>
+        <p>Nellie es un rastreador visual de tareas espor&aacute;dicas: un sem&aacute;foro que muestra cu&aacute;nto tiempo ha pasado desde la &uacute;ltima vez que realiz&oacute; cada tarea, ayud&aacute;ndole a no olvidar aquellas tareas que no tienen una periodicidad fija.</p>
+        <p>El uso de la Aplicaci&oacute;n implica la aceptaci&oacute;n plena de estas Condiciones. Si no est&aacute; de acuerdo con ellas, le rogamos que no utilice la Aplicaci&oacute;n.</p>
+    </section>
+
+    <!-- 2. Definiciones -->
+    <section id="definiciones">
+        <h2>2. Definiciones</h2>
+        <ul>
+            <li><strong>&laquo;Aplicaci&oacute;n&raquo;</strong>: la aplicaci&oacute;n m&oacute;vil Nellie para iOS y Android.</li>
+            <li><strong>&laquo;Usuario&raquo;</strong>: toda persona que descarga y utiliza la Aplicaci&oacute;n.</li>
+            <li><strong>&laquo;Grupos&raquo;</strong>: funci&oacute;n opcional de suscripci&oacute;n que permite compartir tareas y completados con otros usuarios.</li>
+            <li><strong>&laquo;Suscripci&oacute;n&raquo;</strong>: contrato de pago peri&oacute;dico que da acceso a las funciones premium de la Aplicaci&oacute;n, gestionado a trav&eacute;s de Apple App Store o Google Play.</li>
+            <li><strong>&laquo;Prestador&raquo;</strong>: David Alonso Santos, titular y desarrollador de la Aplicaci&oacute;n.</li>
+        </ul>
+    </section>
+
+    <!-- 3. Licencia -->
+    <section id="licencia">
+        <h2>3. Uso de la Aplicaci&oacute;n y Licencia</h2>
+        <p>El Prestador concede al Usuario una licencia <strong>personal, limitada, no exclusiva, intransferible y revocable</strong> para usar la Aplicaci&oacute;n en dispositivos de su propiedad, conforme a estas Condiciones y a las pol&iacute;ticas de las tiendas de aplicaciones.</p>
+        <p>El uso principal de la Aplicaci&oacute;n (creaci&oacute;n y seguimiento de tareas personales) <strong>no requiere cuenta ni conexi&oacute;n a internet</strong>: los datos se almacenan localmente en el dispositivo del Usuario.</p>
+        <p>El Usuario es responsable de mantener su dispositivo seguro y de las copias de seguridad de sus datos locales. La desinstalaci&oacute;n de la Aplicaci&oacute;n elimina los datos locales.</p>
+    </section>
+
+    <!-- 4. Cuentas y Grupos -->
+    <section id="cuentas">
+        <h2>4. Cuentas y Funci&oacute;n de Grupos</h2>
+        <p>La funci&oacute;n de <strong>Grupos</strong> es opcional y requiere una suscripci&oacute;n activa y la creaci&oacute;n de una cuenta mediante <strong>Sign in with Apple</strong> o <strong>Google Sign-In</strong>.</p>
+        <ul>
+            <li>El Usuario se compromete a facilitar informaci&oacute;n veraz al crear su cuenta.</li>
+            <li>La cuenta es personal e intransferible. El Usuario es responsable de la actividad realizada con ella.</li>
+            <li>El nombre para mostrar del Usuario, las tareas compartidas y sus completados ser&aacute;n visibles para los dem&aacute;s miembros de los grupos a los que pertenezca.</li>
+            <li>El tratamiento de los datos personales asociados se describe en la <a href="/legal-docs/nellie/privacy-policy/">Pol&iacute;tica de Privacidad</a>.</li>
+        </ul>
+    </section>
+
+    <!-- 5. Suscripciones -->
+    <section id="suscripciones">
+        <h2>5. Suscripciones</h2>
+        <p>El acceso a las funciones premium (incluida la funci&oacute;n de Grupos) requiere una suscripci&oacute;n de pago, contratada y gestionada a trav&eacute;s de <strong>Apple App Store</strong> o <strong>Google Play</strong>.</p>
+
+        <h3>5.1 Precio y periodicidad</h3>
+        <ul>
+            <li>El precio de cada plan y su periodicidad (por ejemplo, mensual o anual) se muestran <strong>dentro de la Aplicaci&oacute;n</strong> antes de confirmar la compra, en la moneda local del Usuario.</li>
+        </ul>
+
+        <h3>5.2 Per&iacute;odo de prueba gratuito</h3>
+        <ul>
+            <li>El plan anual puede incluir un <strong>per&iacute;odo de prueba gratuito de 7 d&iacute;as</strong> para usuarios que cumplan los requisitos de elegibilidad de la tienda (generalmente, no haber disfrutado antes de una prueba gratuita).</li>
+            <li>Si no se cancela antes de que finalice el per&iacute;odo de prueba, la suscripci&oacute;n se cobrar&aacute; autom&aacute;ticamente al precio mostrado.</li>
+        </ul>
+
+        <h3>5.3 Renovaci&oacute;n autom&aacute;tica y cancelaci&oacute;n</h3>
+        <ul>
+            <li>La suscripci&oacute;n se <strong>renueva autom&aacute;ticamente</strong> al final de cada per&iacute;odo, salvo que se cancele al menos 24 horas antes de la fecha de renovaci&oacute;n.</li>
+            <li>Puede cancelar la suscripci&oacute;n <strong>en cualquier momento</strong> desde los ajustes de su cuenta de Apple App Store o Google Play. La cancelaci&oacute;n surte efecto al final del per&iacute;odo en curso, durante el cual conservar&aacute; el acceso a las funciones premium.</li>
+            <li>Las solicitudes de reembolso se gestionan directamente a trav&eacute;s de Apple o Google, conforme a sus respectivas pol&iacute;ticas.</li>
+        </ul>
+
+        <h3>5.4 Restaurar compras</h3>
+        <ul>
+            <li>Si reinstala la Aplicaci&oacute;n o cambia de dispositivo, puede recuperar su suscripci&oacute;n activa mediante la opci&oacute;n <strong>&laquo;Restaurar compras&raquo;</strong> disponible en la Aplicaci&oacute;n.</li>
+        </ul>
+
+        <div class="callout">
+            <p>El cobro lo realizan &iacute;ntegramente Apple o Google. Nellie <strong>nunca</strong> accede a sus datos de pago ni de tarjeta. La validaci&oacute;n del estado de la suscripci&oacute;n se realiza a trav&eacute;s de RevenueCat, conforme a la <a href="/legal-docs/nellie/privacy-policy/">Pol&iacute;tica de Privacidad</a>.</p>
+        </div>
+    </section>
+
+    <!-- 6. Conducta Prohibida -->
+    <section id="conducta-prohibida">
+        <h2>6. Conducta Prohibida</h2>
+        <p>El Usuario se compromete a no:</p>
+        <ul>
+            <li>Utilizar la Aplicaci&oacute;n con fines il&iacute;citos o contrarios a estas Condiciones.</li>
+            <li>Publicar en los grupos nombres de grupos, tareas o nombres para mostrar ofensivos, difamatorios, discriminatorios o que vulneren derechos de terceros.</li>
+            <li>Intentar acceder a datos de grupos a los que no pertenece, o vulnerar las medidas de seguridad de la Aplicaci&oacute;n.</li>
+            <li>Realizar ingenier&iacute;a inversa, descompilar o modificar la Aplicaci&oacute;n, salvo en los supuestos legalmente permitidos.</li>
+            <li>Usar la Aplicaci&oacute;n de forma que pueda da&ntilde;ar, sobrecargar o perjudicar los servicios en la nube asociados.</li>
+        </ul>
+        <p>El incumplimiento de estas obligaciones podr&aacute; dar lugar a la suspensi&oacute;n o eliminaci&oacute;n de la cuenta del Usuario, sin perjuicio de las acciones legales que correspondan.</p>
+    </section>
+
+    <!-- 7. Propiedad Intelectual -->
+    <section id="propiedad-intelectual">
+        <h2>7. Propiedad Intelectual</h2>
+        <p>La Aplicaci&oacute;n, su c&oacute;digo, dise&ntilde;o, logotipos, textos e interfaz son titularidad del Prestador o de sus licenciantes, y est&aacute;n protegidos por la normativa de propiedad intelectual e industrial.</p>
+        <p>El contenido que el Usuario crea (nombres de tareas, grupos, etc.) es de su titularidad. Al usar la funci&oacute;n de Grupos, el Usuario autoriza al Prestador a almacenar y mostrar dicho contenido a los miembros de sus grupos, con la &uacute;nica finalidad de prestar el servicio.</p>
+    </section>
+
+    <!-- 8. Baja y Eliminaci&oacute;n de Cuenta -->
+    <section id="eliminacion">
+        <h2>8. Baja y Eliminaci&oacute;n de Cuenta</h2>
+        <p>El Usuario puede eliminar su cuenta de Grupos en cualquier momento desde la propia Aplicaci&oacute;n: <strong>Grupos &rarr; men&uacute; &rarr; Eliminar cuenta</strong>. Las instrucciones detalladas est&aacute;n disponibles en la p&aacute;gina <a href="/legal-docs/nellie/delete-account/">Eliminar tu cuenta</a>.</p>
+        <div class="callout-warning callout">
+            <p><strong>Importante:</strong> Eliminar la cuenta no cancela la suscripci&oacute;n. La suscripci&oacute;n debe cancelarse desde los ajustes de Apple App Store o Google Play.</p>
+        </div>
+        <p>El Prestador podr&aacute; suspender o eliminar cuentas que incumplan estas Condiciones, notific&aacute;ndolo al Usuario salvo impedimento legal.</p>
+    </section>
+
+    <!-- 9. Notificaciones Push -->
+    <section id="notificaciones-push">
+        <h2>9. Notificaciones Push</h2>
+        <p>Si el Usuario lo autoriza, la Aplicaci&oacute;n puede enviar notificaciones push relacionadas con la actividad de sus grupos. El Usuario puede desactivarlas en cualquier momento desde los ajustes del dispositivo, sin que ello afecte al resto de funciones de la Aplicaci&oacute;n.</p>
+    </section>
+
+    <!-- 10. Limitaci&oacute;n de Responsabilidad -->
+    <section id="limitacion-responsabilidad">
+        <h2>10. Limitaci&oacute;n de Responsabilidad</h2>
+        <p>La Aplicaci&oacute;n se proporciona &laquo;tal cual&raquo; y &laquo;seg&uacute;n disponibilidad&raquo;. En la m&aacute;xima medida permitida por la ley:</p>
+        <ul>
+            <li>El Prestador no garantiza la disponibilidad ininterrumpida de los servicios en la nube (Grupos), que dependen de proveedores terceros.</li>
+            <li>El Prestador no se hace responsable de la p&eacute;rdida de datos locales derivada de la desinstalaci&oacute;n de la Aplicaci&oacute;n, fallos del dispositivo o ausencia de copias de seguridad del Usuario.</li>
+            <li>El Prestador no se hace responsable del contenido que los Usuarios publiquen en sus grupos.</li>
+            <li>Nellie es una herramienta de organizaci&oacute;n personal y no constituye asesoramiento profesional de ning&uacute;n tipo.</li>
+        </ul>
+        <p>Nada en estas Condiciones limita los derechos que la legislaci&oacute;n de consumidores reconoce al Usuario con car&aacute;cter imperativo.</p>
+    </section>
+
+    <!-- 11. Modificaciones -->
+    <section id="modificaciones">
+        <h2>11. Modificaciones de las Condiciones</h2>
+        <p>El Prestador se reserva el derecho de modificar estas Condiciones para adaptarlas a novedades legislativas o cambios en los servicios. Las modificaciones sustanciales ser&aacute;n notificadas a trav&eacute;s de la Aplicaci&oacute;n con antelaci&oacute;n razonable. El uso continuado de la Aplicaci&oacute;n tras la entrada en vigor de los cambios implica su aceptaci&oacute;n.</p>
+    </section>
+
+    <!-- 12. Legislaci&oacute;n -->
+    <section id="legislacion">
+        <h2>12. Legislaci&oacute;n Aplicable y Jurisdicci&oacute;n</h2>
+        <p>Estas Condiciones se rigen por la legislaci&oacute;n espa&ntilde;ola. Para la resoluci&oacute;n de cualquier controversia, las partes se someten a los juzgados y tribunales del domicilio del Usuario cuando este tenga la condici&oacute;n de consumidor; en su defecto, a los de Madrid (Espa&ntilde;a).</p>
+        <p>Los usuarios residentes en la Uni&oacute;n Europea pueden acudir adem&aacute;s a la plataforma de resoluci&oacute;n de litigios en l&iacute;nea de la Comisi&oacute;n Europea.</p>
+    </section>
+
+    <!-- 13. Contacto -->
+    <section id="contacto">
+        <h2>13. Contacto e Identificaci&oacute;n del Prestador</h2>
+        <div class="table-wrapper">
+            <table>
+                <tbody>
+                    <tr><td><strong>Prestador</strong></td><td>David Alonso Santos</td></tr>
+                    <tr><td><strong>Correo electr&oacute;nico</strong></td><td><a href="mailto:dalodev.dev@gmail.com">dalodev.dev@gmail.com</a></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Para cualquier duda sobre estas Condiciones, puede dirigirse al correo indicado.</p>
+    </section>
+
+    <hr style="margin: 40px 0; border: none; border-top: 2px solid var(--color-border);">
+    <p><strong>Fecha de entrada en vigor:</strong> 13 de junio de 2026</p>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p><strong>Nellie</strong> &mdash; Tu sem&aacute;foro visual de tareas espor&aacute;dicas</p>
+        <p>T&eacute;rminos y Condiciones v1.0 &mdash; Vigente desde el 13 de junio de 2026</p>
+        <p>Contacto: <a href="mailto:dalodev.dev@gmail.com">dalodev.dev@gmail.com</a></p>
+        <p style="margin-top: 12px; font-size: 0.8rem;">&copy; 2026 David Alonso Santos. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
